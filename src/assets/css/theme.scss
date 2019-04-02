@@ -1,0 +1,28 @@
+@for $i from 1 through 20 {
+  .ml#{$i * 5} {
+    margin-left: 0.05rem * $i
+  }
+  .mt#{$i * 5} {
+    margin-top: 0.05rem * $i
+  }
+  .mr#{$i * 5} {
+    margin-right: 0.05rem * $i
+  }
+  .mb#{$i * 5} {
+    margin-bottom: 0.05rem * $i
+  }
+  .pl#{$i * 5} {
+    padding-left: 0.05rem * $i
+  }
+  .pt#{$i * 5} {
+    padding-top: 0.05rem * $i
+  }
+  .pr#{$i * 5} {
+    padding-right: 0.05rem * $i
+  }
+  .pb#{$i * 5} {
+    padding-bottom: 0.05rem * $i
+  }
+}
+
+$font-size: .2rem;

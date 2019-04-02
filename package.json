@@ -13,13 +13,13 @@
     "build": "cross-env NODE_ENV=production webpack --progress",
     "release": "standard-version"
   },
-  "homepage": "https://github.com/kimseongrim/hivue#readme",
+  "homepage": "https://github.com/lory8545/vue-demo#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimseongrim/hivue.git"
+    "url": "https://github.com/lory8545/vue-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/kimseongrim/hivue/issues"
+    "url": "https://github.com/lory8545/vue-demo/issues"
   },
   "keywords": [
     "vuejs",
@@ -29,7 +29,12 @@
   ],
   "dependencies": {
     "launch-editor-middleware": "^2.2.1",
-    "vue": "^2.6.7"
+    "vue": "^2.6.7",
+    "vue-router": "^3.0.2",
+    "axios": "^0.18.0",
+    "vuex": "^3.1.0",
+    "moment": "^2.24.0",
+    "element-ui": "^2.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
@@ -40,7 +45,6 @@
     "@commitlint/config-conventional": "^7.5.0",
     "acorn": "^6.1.1",
     "autoprefixer": "^9.4.8",
-    "axios": "^0.18.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "clean-webpack-plugin": "^1.0.1",
@@ -66,6 +70,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
     "sass-loader": "^7.1.0",
+    "sass-resources-loader": "^2.0.0",
     "standard-version": "^5.0.1",
     "stylelint": "^8.4.0",
     "stylelint-config-recommended-scss": "^3.2.0",

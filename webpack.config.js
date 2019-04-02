@@ -28,13 +28,14 @@ module.exports = {
   // source-map
   devtool: prod ? 'none' : 'eval-source-map',
   devServer: {
+    hot: true,
     host: 'localhost',
     port: 3000,
     open: true,
     proxy: {
-      '/api': {
+      '/v2': {
         // Real api
-        target: 'http://localhost:3200',
+        target: 'https://api.douban.com',
         // Needed for virtual hosted sites
         changeOrigin: true
       }
@@ -86,6 +87,12 @@ module.exports = {
           prod ? MiniCssExtractPlugin.loader : 'vue-style-loader',
           prod ? 'css-loader' : 'css-loader?sourceMap',
           prod ? 'sass-loader' : 'sass-loader?sourceMap',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: ['./src/assets/css/variable.scss', './src/assets/css/theme.scss']
+            }
+          },
           {
             // https://stylelint.io/user-guide/configuration/#ignorefiles
             loader: prod ? 'postcss-loader' : 'postcss-loader?sourceMap',
